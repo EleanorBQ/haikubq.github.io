@@ -1,0 +1,83 @@
+/*导航条相关*/
+* {
+        margin: 0;
+        padding: 0;
+      }
+
+.narbar-body {
+        padding-top: 50px;
+        font-size: 15px;
+        color: rgb(60, 4, 112);
+      }
+
+     li {
+        list-style: none;
+      }
+
+     div {
+        text-align: center;
+      }
+
+.father {
+        /* 行内块元素 */
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px;
+        background-color: ivory;
+        box-shadow: 7px 5px 5px #ccc; 
+      }
+
+      .son {
+        /* 二级导航栏 隐藏在内行框 */
+        display: none;
+        /*  .dropdown 类使用 position:relative，当我们希望将下拉内容放置在下拉按钮的正下方（使用 position:absolute）时，需要使用该类。
+        .dropdown-content 类保存实际的下拉菜单内容。默认情况下它是隐藏的，并将在悬停时显示  */
+        position: absolute;
+        background-color: ivory;
+        top: 40px;
+        left: 10px;
+        padding: 5px;
+      }
+
+      .son>li {
+        /* 所有 4 个内边距都是 10px */
+        padding: 5px;
+      }
+
+      /* 选择鼠标所在位置的li表签 */
+      .son li:hover {
+        background-color: #EEB4B4;
+        /* 鼠标在其上显示的颜色 */
+        color: crimson;
+      }
+
+      .father:hover .son {
+        /* display是设置元素显示的方式，block是一块状元素的方式显示 */
+        display: block;
+      }
+
+  /* 设置背景图片 */
+body{
+   background:url(./images/hh.jpg)  no-repeat center center;
+   background-size:cover; 
+   background-attachment:fixed;
+   background-color:#CCCCCC;
+}
+
+ /* 设置插图 */
+img{     
+  position: absolute;  
+  left:550px;
+  top:370px;
+  width: 320
+}
+
+
+/* 标题文字 */
+h1{
+	color:black;
+	text-align:center;
+                text-shadow: 2px 2px 4px #ccc;
+                font-size: 34pt;
+}
+
